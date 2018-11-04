@@ -1,0 +1,9 @@
+type Example {
+    uuid: ID!
+    name: String!
+}
+
+type Query {
+    examples: [Example!]!
+    example(uuid: ID!): Example
+}
