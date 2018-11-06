@@ -1,0 +1,93 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".json"
+        ],
+        "paths": [
+          "src"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "import/named": 2,
+    "import/namespace": 2,
+    "import/default": 2,
+    "import/export": 2,
+    "indent": [
+      "error",
+      4
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "padding-line-between-statements": [
+      // Rule details: https://eslint.org/docs/rules/padding-line-between-statements
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": [
+          "return",
+          "if",
+          "while",
+          "for",
+          "switch",
+          "try",
+          "class",
+          "function"
+        ]
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-no-bind": [
+      "error",
+      {
+        "ignoreRefs": true
+      }
+    ],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": [
+      2
+    ],
+    "react/prefer-stateless-function": [
+      "error",
+      {
+        "ignorePureComponents": true
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
+}
