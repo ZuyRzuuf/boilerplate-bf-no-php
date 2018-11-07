@@ -1,17 +1,15 @@
 import React from 'react';
 
-import Header from "./Header.jsx";
-import Dashboard from "./Dashboard.jsx";
+import Header from './Header';
+import Dashboard from './Dashboard';
 
-class App extends React.Component {
-    render() {
-        return (
-            <div>
-                <Header/>
-                <Dashboard/>
-            </div>
-        );
-    }
-}
+const App = () => {
+    return (
+        <>
+            <Header />
+            <Dashboard />
+        </>
+    );
+};
 
 export default App;

@@ -23,71 +23,73 @@
           "src"
         ]
       }
-    }
+    },
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "16.5.2",
+      "flowVersion": "0.53"
+    },
+    "propWrapperFunctions": [
+      "forbidExtraProps"
+    ]
   },
   "rules": {
-    "import/named": 2,
-    "import/namespace": 2,
-    "import/default": 2,
-    "import/export": 2,
-    "indent": [
-      "error",
-      4
-    ],
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
-    "padding-line-between-statements": [
-      // Rule details: https://eslint.org/docs/rules/padding-line-between-statements
-      "error",
-      {
-        "blankLine": "always",
-        "prev": "*",
-        "next": [
-          "return",
-          "if",
-          "while",
-          "for",
-          "switch",
-          "try",
-          "class",
-          "function"
-        ]
-      }
-    ],
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
-      }
-    ],
-    "react/jsx-no-bind": [
-      "error",
-      {
-        "ignoreRefs": true
-      }
-    ],
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": [
-      2
-    ],
-    "react/prefer-stateless-function": [
-      "error",
-      {
-        "ignorePureComponents": true
-      }
-    ],
-    "semi": [
-      "error",
-      "always"
-    ]
+    "indent": ["error", 4, {"SwitchCase": 1}],
+    "no-console": "error",
+    // Rule details: https://eslint.org/docs/rules/padding-line-between-statements
+    "padding-line-between-statements": ["error", {
+      "blankLine": "always",
+      "prev": "*",
+      "next": ["return", "if", "while", "for", "switch", "try", "class", "function"]
+    }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-no-bind": ["error", {"ignoreRefs": true}],
+    "react/jsx-no-duplicate-props": ["error", { "ignoreCase": true }],
+    "react/jsx-no-target-blank": ["error", { "enforceDynamicLinks": "always" }],
+    "react/jsx-one-expression-per-line": ["error", { "allow": "literal" }],
+    "react/jsx-props-no-multi-spaces": "error",
+    "react/jsx-sort-default-props": ["error", {
+      "ignoreCase": false
+    }],
+    "react/jsx-sort-props": ["error", {
+      "callbacksLast": true,
+      "shorthandFirst": false,
+      "shorthandLast": false,
+      "ignoreCase": false,
+      "noSortAlphabetically": false,
+      "reservedFirst": true
+    }],
+    "react/jsx-tag-spacing": ["error", {
+      "closingSlash": "never",
+      "beforeSelfClosing": "always",
+      "afterOpening": "never",
+      "beforeClosing": "allow"
+    }],
+    "react/jsx-wrap-multilines": ["error", {
+      "declaration": "parens-new-line",
+      "assignment": "parens-new-line",
+      "return": "parens-new-line",
+      "arrow": "parens-new-line",
+      "condition": "parens-new-line",
+      "logical": "parens-new-line",
+      "prop": "parens-new-line"
+    }],
+    "react/no-access-state-in-setstate": "error",
+    "react/no-danger": "error",
+    "react/no-redundant-should-component-update": "error",
+    "react/no-unsafe": "error",
+    "react/no-unused-prop-types": "error",
+    "react/no-unused-state": "error",
+    "react/prefer-es6-class": "error",
+    "react/prefer-stateless-function": ["error", {"ignorePureComponents": true}],
+    "react/require-default-props": ["error", { "forbidDefaultForRequired": true }],
+    "react/sort-prop-types": ["error", {
+      "callbacksLast": true,
+      "ignoreCase": false,
+      "requiredFirst": false,
+      "sortShapeProp": true,
+      "noSortAlphabetically": false
+    }]
   }
 }
