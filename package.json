@@ -68,9 +68,10 @@
     "webpack-dev-server": "^3.1.9"
   },
   "scripts": {
-    "client": "webpack-dev-server --mode development --hot --host 0.0.0.0 --disable-host-check --port 3000",
-    "server": "./node_modules/nodemon/bin/nodemon.js --exec babel-node server.js",
     "build": "webpack --mode production",
+    "client": "webpack-dev-server --mode development --hot --host 0.0.0.0 --disable-host-check --port 3000",
+    "eslint-fix": "./node_modules/.bin/eslint --fix --ext .js,.jsx src",
+    "server": "./node_modules/nodemon/bin/nodemon.js --exec babel-node server.js",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "sequelize-skeleton": "./node_modules/sequelize-cli/lib/sequelize init:models; ./node_modules/sequelize-cli/lib/sequelize init:config"
   }
