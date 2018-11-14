@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A suite invalid path should redirect to NotFound and renders HTML tree correctly 1`] = `
+<div>
+  <div>
+    Backend/Frontend boilerplate without PHP
+  </div>
+  <div>
+    NotFound
+  </div>
+</div>
+`;
+
+exports[`A suite renders components tree correctly 1`] = `
+<MemoryRouter
+  initialEntries={
+    Array [
+      "/",
+    ]
+  }
+  initialIndex={0}
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "891bob",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "891bob",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <App>
+      <Component>
+        <div>
+          <Header>
+            <div>
+              Backend/Frontend boilerplate without PHP
+            </div>
+          </Header>
+          <Switch>
+            <Route
+              component={[Function]}
+              computedMatch={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+              exact={true}
+              location={
+                Object {
+                  "hash": "",
+                  "key": "891bob",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              path="/"
+            >
+              <Dashboard
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "canGo": [Function],
+                    "createHref": [Function],
+                    "entries": Array [
+                      Object {
+                        "hash": "",
+                        "key": "891bob",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                    ],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "index": 0,
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "key": "891bob",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                location={
+                  Object {
+                    "hash": "",
+                    "key": "891bob",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+              >
+                <div>
+                  Dashboard
+                </div>
+              </Dashboard>
+            </Route>
+          </Switch>
+        </div>
+      </Component>
+    </App>
+  </Router>
+</MemoryRouter>
+`;
+
+exports[`A suite renders isolated component correctly 1`] = `
+<Component>
+  <Header />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+    />
+  </Switch>
+</Component>
+`;
+
+exports[`A suite valid path should redirect to Dashboard and renders HTML tree correctly 1`] = `
+<div>
+  <div>
+    Backend/Frontend boilerplate without PHP
+  </div>
+  <div>
+    Dashboard
+  </div>
+</div>
+`;

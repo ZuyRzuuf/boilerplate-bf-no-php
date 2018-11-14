@@ -46,6 +46,7 @@
   ],
   "rules": {
     // first argument: 0 - silent, 1 - warning, 2 - error
+    "eol-last": "error",
     "indent": ["error", 4, {"SwitchCase": 1}],
     "no-console": "error",
     "no-multi-spaces": "error",
@@ -63,7 +64,7 @@
     "react/jsx-no-bind": ["error", {"ignoreRefs": true}],
     "react/jsx-no-duplicate-props": ["error", { "ignoreCase": true }],
     "react/jsx-no-target-blank": ["error", { "enforceDynamicLinks": "always" }],
-    "react/jsx-one-expression-per-line": ["error", { "allow": "literal" }],
+    "react/jsx-one-expression-per-line": ["error", { "allow": "single-child" }],
     "react/jsx-pascal-case": "error",
     "react/jsx-props-no-multi-spaces": "error",
     "jsx-quotes": ["error", "prefer-double"],
