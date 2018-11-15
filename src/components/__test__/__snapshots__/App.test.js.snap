@@ -1,5 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<App /> suite renders isolated component correctly 1`] = `
+<Component>
+  <Header />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+    />
+  </Switch>
+</Component>
+`;
+
 exports[`A suite invalid path should redirect to NotFound and renders HTML tree correctly 1`] = `
 <div>
   <div>

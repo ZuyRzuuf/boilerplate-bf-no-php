@@ -39,6 +39,15 @@ it is likely that something in your build process is loading the wrong version. 
 to look for the first entry that doesn't mention "@babel/core" or "babel-core" to see what is calling Babel.`
 [https://github.com/babel/babel/issues/8206#issuecomment-419705758]
 
+GraphQL queries are loaded from external *.graphql files with Webpack loader.
+[https://www.apollographql.com/docs/react/recipes/webpack.html]
+[https://blog.apollographql.com/webpacking-your-graphql-documents-bf9697ed259b]
+
+Tests for React Router with Jest and Enzyme are configured as described in 
+[https://medium.com/@antonybudianto/react-router-testing-with-jest-and-enzyme-17294fefd303]
+and
+[https://github.com/airbnb/enzyme/blob/master/docs/guides/jsdom.md]
+
 **Details:**
 TBA
 

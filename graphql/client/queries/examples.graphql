@@ -1,0 +1,10 @@
+query Examples {
+    examples {
+        ...examplesData
+    }
+}
+
+fragment examplesData on Example {
+    uuid
+    name
+}
