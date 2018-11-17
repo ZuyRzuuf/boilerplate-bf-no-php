@@ -1,7 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`A suite renders correctly 1`] = `
+exports[`<Header /> suite renders correctly HTML tree 1`] = `
 <div>
-  Backend/Frontend boilerplate without PHP
+  Backend/Frontend Node, React, Typescript boilerplate
+</div>
+`;
+
+exports[`<Header /> suite renders correctly components tree 1`] = `
+<Header>
+  <div>
+    Backend/Frontend Node, React, Typescript boilerplate
+  </div>
+</Header>
+`;
+
+exports[`<Header /> suite renders correctly isolated component 1`] = `
+<div>
+  Backend/Frontend Node, React, Typescript boilerplate
 </div>
 `;

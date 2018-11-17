@@ -23,7 +23,7 @@
       "node": {
         "extensions": [
           ".js",
-          ".jsx",
+          ".tsx",
           ".json"
         ],
         "paths": [
@@ -60,7 +60,7 @@
     "react/jsx-closing-bracket-location": "error",
     "react/jsx-closing-tag-location": "error",
     "react/jsx-curly-spacing": "error",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".tsx"] }],
     "react/jsx-no-bind": ["error", {"ignoreRefs": true}],
     "react/jsx-no-duplicate-props": ["error", { "ignoreCase": true }],
     "react/jsx-no-target-blank": ["error", { "enforceDynamicLinks": "always" }],

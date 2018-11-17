@@ -12,28 +12,31 @@ const cleanPlugin = new CleanWebPackPlugin([outputDirectory]);
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: './src/index.tsx',
     output: {
         path: path.join(__dirname, outputDirectory),
         filename: 'bundle.js'
     },
     resolve: {
-        extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
+        extensions: ['.ts', '.tsx', '.js', '.json'],
     },
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /.tsx?$/,
+                loader: 'awesome-typescript-loader',
                 exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader'
-                }
             },
             {
-                test: /\.(js|jsx)$/,
+                test: /.js$/,
+                loader: 'source-map-loader',
+                enforce: 'pre',
+            },
+            {
+                test: /\.(js|tsx)$/,
                 exclude: /node_modules/,
-                use: ['babel-loader', 'eslint-loader']
+                use: ['eslint-loader']
             },
             // https://www.apollographql.com/docs/react/recipes/webpack.html
             {
@@ -46,11 +49,5 @@ module.exports = {
     plugins: [
         cleanPlugin,
         htmlPlugin
-    ],
-    devServer: {
-        host: 'localhost',
-        port: 3000,
-        historyApiFallback: true,
-        open: true
-    }
+    ]
 };
