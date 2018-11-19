@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App /> suite renders HTML tree correctly 1`] = `
+exports[`<Router /> suite renders HTML tree correctly 1`] = `
 <div>
   <div>
     Backend/Frontend Node, React, Typescript boilerplate
@@ -28,7 +28,7 @@ exports[`<App /> suite renders HTML tree correctly 1`] = `
 </div>
 `;
 
-exports[`<App /> suite renders components tree correctly 1`] = `
+exports[`<Router /> suite renders components tree correctly 1`] = `
 <MemoryRouter
   initialEntries={
     Array [
@@ -47,7 +47,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "xsofu7",
+            "key": "42dedh",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -61,7 +61,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "xsofu7",
+          "key": "42dedh",
           "pathname": "/",
           "search": "",
           "state": undefined,
@@ -130,7 +130,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
                 location={
                   Object {
                     "hash": "",
-                    "key": "xsofu7",
+                    "key": "42dedh",
                     "pathname": "/",
                     "search": "",
                     "state": undefined,
@@ -148,7 +148,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
                       "entries": Array [
                         Object {
                           "hash": "",
-                          "key": "xsofu7",
+                          "key": "42dedh",
                           "pathname": "/",
                           "search": "",
                           "state": undefined,
@@ -162,7 +162,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
                       "listen": [Function],
                       "location": Object {
                         "hash": "",
-                        "key": "xsofu7",
+                        "key": "42dedh",
                         "pathname": "/",
                         "search": "",
                         "state": undefined,
@@ -174,7 +174,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
                   location={
                     Object {
                       "hash": "",
-                      "key": "xsofu7",
+                      "key": "42dedh",
                       "pathname": "/",
                       "search": "",
                       "state": undefined,
@@ -203,7 +203,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
 </MemoryRouter>
 `;
 
-exports[`<App /> suite renders isolated component correctly 1`] = `
+exports[`<Router /> suite renders isolated component correctly 1`] = `
 <Fragment>
   <Router />
 </Fragment>

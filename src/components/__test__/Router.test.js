@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { MemoryRouter } from 'react-router';
 
-import App from '../App';
+import Router from '../App';
 
-describe('<App /> suite', function() {
+describe('<Router /> suite', function() {
     test('renders isolated component correctly', () => {
         const wrapper = shallow(
-            <App />
+            <Router />
         );
         expect(wrapper).toMatchSnapshot();
     });
@@ -14,7 +14,7 @@ describe('<App /> suite', function() {
     test('renders HTML tree correctly', () => {
         const wrapper = render(
             <MemoryRouter initialEntries={[ '/' ]} initialIndex={0}>
-                <App />
+                <Router />
             </MemoryRouter>
         );
         expect(wrapper).toMatchSnapshot();
@@ -23,7 +23,7 @@ describe('<App /> suite', function() {
     test('renders components tree correctly', () => {
         const wrapper = mount(
             <MemoryRouter initialEntries={[ '/' ]} initialIndex={0}>
-                <App />
+                <Router />
             </MemoryRouter>
         );
         expect(wrapper).toMatchSnapshot();

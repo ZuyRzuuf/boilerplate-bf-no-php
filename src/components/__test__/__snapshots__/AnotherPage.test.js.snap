@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AnotherPage /> suite renders correctly HTML tree 1`] = `
+<div>
+  AnotherPage
+</div>
+`;
+
+exports[`<AnotherPage /> suite renders correctly components tree 1`] = `
+<AnotherPage>
+  <div>
+    AnotherPage
+  </div>
+</AnotherPage>
+`;
+
+exports[`<AnotherPage /> suite renders correctly isolated component 1`] = `
+<Fragment>
+  <div>
+    AnotherPage
+  </div>
+</Fragment>
+`;

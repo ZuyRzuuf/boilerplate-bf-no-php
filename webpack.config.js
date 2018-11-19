@@ -15,7 +15,8 @@ module.exports = {
     entry: './src/index.tsx',
     output: {
         path: path.join(__dirname, outputDirectory),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/'
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.json'],
@@ -45,6 +46,9 @@ module.exports = {
                 loader: 'graphql-tag/loader',
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     plugins: [
         cleanPlugin,

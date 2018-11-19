@@ -3,11 +3,17 @@
     "outDir": "./build/",
     "sourceMap": true,
     "skipLibCheck": true,
-    "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es5",
-    "jsx": "react"
+    "noImplicitAny": false,
+    "module": "es6",
+    "target": "es6",
+    "moduleResolution": "node",
+    "declaration": false,
+    "jsx": "react",
+    "noLib": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "esModuleInterop": true
   },
+  "compileOnSave": false,
   "include": [
     "./src/**/*"
   ],

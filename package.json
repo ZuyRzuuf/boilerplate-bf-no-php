@@ -59,6 +59,8 @@
     "@babel/preset-typescript": "^7.1.0",
     "@types/enzyme": "^3.1.15",
     "@types/jest": "^23.3.9",
+    "@types/react-router": "^4.4.1",
+    "@types/react-router-dom": "^4.3.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
@@ -104,7 +106,7 @@
   "jest": {
     "collectCoverageFrom": [
       "<rootDir>/src/**/*.{js,tsx}",
-      "!<rootDir>/src/index.tss",
+      "!<rootDir>/src/index.tsx",
       "!**/node_modules/**",
       "!**/vendor/**",
       "!**/build/**",
