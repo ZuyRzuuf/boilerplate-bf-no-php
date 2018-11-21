@@ -1,7 +1,10 @@
 import * as React from 'react';
 import { MemoryRouter } from 'react-router';
 
+import MockComponent from '../__mocks__/MockComponent';
 import App from '../App';
+
+jest.mock('../Dashboard', () => MockComponent);
 
 describe('<App /> suite', function() {
     test('renders isolated component correctly', () => {

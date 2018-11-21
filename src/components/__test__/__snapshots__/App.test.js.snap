@@ -22,9 +22,7 @@ exports[`<App /> suite renders HTML tree correctly 1`] = `
       Wrong URI
     </a>
   </div>
-  <div>
-    Dashboard
-  </div>
+  <div />
 </div>
 `;
 
@@ -47,7 +45,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "xsofu7",
+            "key": "aa1pz3",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -61,7 +59,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "xsofu7",
+          "key": "aa1pz3",
           "pathname": "/",
           "search": "",
           "state": undefined,
@@ -130,7 +128,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
                 location={
                   Object {
                     "hash": "",
-                    "key": "xsofu7",
+                    "key": "aa1pz3",
                     "pathname": "/",
                     "search": "",
                     "state": undefined,
@@ -138,7 +136,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
                 }
                 path="/"
               >
-                <Dashboard
+                <MockComponent
                   history={
                     Object {
                       "action": "POP",
@@ -148,7 +146,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
                       "entries": Array [
                         Object {
                           "hash": "",
-                          "key": "xsofu7",
+                          "key": "aa1pz3",
                           "pathname": "/",
                           "search": "",
                           "state": undefined,
@@ -162,7 +160,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
                       "listen": [Function],
                       "location": Object {
                         "hash": "",
-                        "key": "xsofu7",
+                        "key": "aa1pz3",
                         "pathname": "/",
                         "search": "",
                         "state": undefined,
@@ -174,7 +172,7 @@ exports[`<App /> suite renders components tree correctly 1`] = `
                   location={
                     Object {
                       "hash": "",
-                      "key": "xsofu7",
+                      "key": "aa1pz3",
                       "pathname": "/",
                       "search": "",
                       "state": undefined,
@@ -189,10 +187,8 @@ exports[`<App /> suite renders components tree correctly 1`] = `
                     }
                   }
                 >
-                  <div>
-                    Dashboard
-                  </div>
-                </Dashboard>
+                  <div />
+                </MockComponent>
               </Route>
             </Switch>
           </div>

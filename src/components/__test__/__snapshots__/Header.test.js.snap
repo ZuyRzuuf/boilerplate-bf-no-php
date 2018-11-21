@@ -1,21 +1,141 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header /> suite renders correctly HTML tree 1`] = `
-<div>
-  Backend/Frontend Node, React, Typescript boilerplate
-</div>
+Array [
+  <div>
+    Backend/Frontend Node, React, Typescript boilerplate
+  </div>,
+  <div>
+    <a
+      href="/"
+    >
+      Dashboard
+    </a>
+    <a
+      href="/another-page"
+    >
+      Another Page
+    </a>
+    <a
+      href="/wrong-uri"
+    >
+      Wrong URI
+    </a>
+  </div>,
+]
 `;
 
 exports[`<Header /> suite renders correctly components tree 1`] = `
-<Header>
-  <div>
-    Backend/Frontend Node, React, Typescript boilerplate
-  </div>
-</Header>
+<MemoryRouter
+  initialEntries={
+    Array [
+      "/",
+    ]
+  }
+  initialIndex={0}
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "1dym3k",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "1dym3k",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Header>
+      <div>
+        Backend/Frontend Node, React, Typescript boilerplate
+      </div>
+      <div>
+        <Link
+          replace={false}
+          to="/"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            Dashboard
+          </a>
+        </Link>
+        <Link
+          replace={false}
+          to="/another-page"
+        >
+          <a
+            href="/another-page"
+            onClick={[Function]}
+          >
+            Another Page
+          </a>
+        </Link>
+        <Link
+          replace={false}
+          to="/wrong-uri"
+        >
+          <a
+            href="/wrong-uri"
+            onClick={[Function]}
+          >
+            Wrong URI
+          </a>
+        </Link>
+      </div>
+    </Header>
+  </Router>
+</MemoryRouter>
 `;
 
 exports[`<Header /> suite renders correctly isolated component 1`] = `
-<div>
-  Backend/Frontend Node, React, Typescript boilerplate
-</div>
+<Fragment>
+  <div>
+    Backend/Frontend Node, React, Typescript boilerplate
+  </div>
+  <div>
+    <Link
+      replace={false}
+      to="/"
+    >
+      Dashboard
+    </Link>
+    <Link
+      replace={false}
+      to="/another-page"
+    >
+      Another Page
+    </Link>
+    <Link
+      replace={false}
+      to="/wrong-uri"
+    >
+      Wrong URI
+    </Link>
+  </div>
+</Fragment>
 `;

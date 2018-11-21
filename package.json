@@ -139,6 +139,7 @@
     ],
     "testEnvironment": "node",
     "transform": {
+      "\\.(gql|graphql)$": "<rootDir>/node_modules/jest-transform-graphql",
       "^.+\\.jsx?$": "babel-jest",
       "^.+\\.(ts|tsx)$": "ts-jest"
     },

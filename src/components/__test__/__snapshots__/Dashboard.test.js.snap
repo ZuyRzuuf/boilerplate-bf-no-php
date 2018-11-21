@@ -1,9 +1,405 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Dashboard /> suite renders correctly 1`] = `
-<Fragment>
-  <div>
-    Dashboard
-  </div>
-</Fragment>
+<ApolloProvider
+  client={
+    ApolloClient {
+      "cache": InMemoryCache {
+        "addTypename": false,
+        "cacheKeyRoot": CacheKeyNode {
+          "children": null,
+          "key": null,
+        },
+        "config": Object {
+          "addTypename": false,
+          "dataIdFromObject": [Function],
+          "fragmentMatcher": HeuristicFragmentMatcher {},
+        },
+        "data": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "maybeBroadcastWatch": [Function],
+        "optimistic": Array [],
+        "silenceBroadcast": false,
+        "storeReader": StoreReader {
+          "cacheKeyRoot": CacheKeyNode {
+            "children": null,
+            "key": null,
+          },
+          "executeSelectionSet": [Function],
+          "executeStoreQuery": [Function],
+          "keyMaker": QueryKeyMaker {
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
+            "perQueryKeyMakers": Map {},
+          },
+        },
+        "storeWriter": StoreWriter {},
+        "typenameDocumentCache": Map {},
+        "watches": Set {},
+      },
+      "defaultOptions": Object {},
+      "disableNetworkFetches": false,
+      "link": ApolloLink {
+        "request": [Function],
+      },
+      "mutate": [Function],
+      "query": [Function],
+      "queryDeduplication": true,
+      "reFetchObservableQueries": [Function],
+      "resetStore": [Function],
+      "resetStoreCallbacks": Array [],
+      "ssrMode": false,
+      "store": DataStore {
+        "cache": InMemoryCache {
+          "addTypename": false,
+          "cacheKeyRoot": CacheKeyNode {
+            "children": null,
+            "key": null,
+          },
+          "config": Object {
+            "addTypename": false,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimistic": Array [],
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "keyMaker": QueryKeyMaker {
+              "cacheKeyRoot": CacheKeyNode {
+                "children": null,
+                "key": null,
+              },
+              "perQueryKeyMakers": Map {},
+            },
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+      },
+      "version": "2.4.5",
+      "watchQuery": [Function],
+    }
+  }
+>
+  <Dashboard />
+</ApolloProvider>
+`;
+
+exports[`<Dashboard /> suite renders correctly HTML tree 1`] = `
+<ApolloProvider
+  client={
+    ApolloClient {
+      "cache": InMemoryCache {
+        "addTypename": false,
+        "cacheKeyRoot": CacheKeyNode {
+          "children": null,
+          "key": null,
+        },
+        "config": Object {
+          "addTypename": false,
+          "dataIdFromObject": [Function],
+          "fragmentMatcher": HeuristicFragmentMatcher {},
+        },
+        "data": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "maybeBroadcastWatch": [Function],
+        "optimistic": Array [],
+        "silenceBroadcast": false,
+        "storeReader": StoreReader {
+          "cacheKeyRoot": CacheKeyNode {
+            "children": null,
+            "key": null,
+          },
+          "executeSelectionSet": [Function],
+          "executeStoreQuery": [Function],
+          "keyMaker": QueryKeyMaker {
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
+            "perQueryKeyMakers": Map {},
+          },
+        },
+        "storeWriter": StoreWriter {},
+        "typenameDocumentCache": Map {},
+        "watches": Set {},
+      },
+      "defaultOptions": Object {},
+      "disableNetworkFetches": false,
+      "link": ApolloLink {
+        "request": [Function],
+      },
+      "mutate": [Function],
+      "query": [Function],
+      "queryDeduplication": true,
+      "reFetchObservableQueries": [Function],
+      "resetStore": [Function],
+      "resetStoreCallbacks": Array [],
+      "ssrMode": false,
+      "store": DataStore {
+        "cache": InMemoryCache {
+          "addTypename": false,
+          "cacheKeyRoot": CacheKeyNode {
+            "children": null,
+            "key": null,
+          },
+          "config": Object {
+            "addTypename": false,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimistic": Array [],
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "keyMaker": QueryKeyMaker {
+              "cacheKeyRoot": CacheKeyNode {
+                "children": null,
+                "key": null,
+              },
+              "perQueryKeyMakers": Map {},
+            },
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+      },
+      "version": "2.4.5",
+      "watchQuery": [Function],
+    }
+  }
+>
+  <Dashboard />
+</ApolloProvider>
+`;
+
+exports[`<Dashboard /> suite renders correctly components tree 1`] = `
+<ApolloProvider
+  client={
+    ApolloClient {
+      "cache": InMemoryCache {
+        "addTypename": false,
+        "cacheKeyRoot": CacheKeyNode {
+          "children": null,
+          "key": null,
+        },
+        "config": Object {
+          "addTypename": false,
+          "dataIdFromObject": [Function],
+          "fragmentMatcher": HeuristicFragmentMatcher {},
+        },
+        "data": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "maybeBroadcastWatch": [Function],
+        "optimistic": Array [],
+        "silenceBroadcast": false,
+        "storeReader": StoreReader {
+          "cacheKeyRoot": CacheKeyNode {
+            "children": null,
+            "key": null,
+          },
+          "executeSelectionSet": [Function],
+          "executeStoreQuery": [Function],
+          "keyMaker": QueryKeyMaker {
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
+            "perQueryKeyMakers": Map {},
+          },
+        },
+        "storeWriter": StoreWriter {},
+        "typenameDocumentCache": Map {},
+        "watches": Set {},
+      },
+      "defaultOptions": Object {},
+      "disableNetworkFetches": false,
+      "link": ApolloLink {
+        "request": [Function],
+      },
+      "mutate": [Function],
+      "query": [Function],
+      "queryDeduplication": true,
+      "reFetchObservableQueries": [Function],
+      "resetStore": [Function],
+      "resetStoreCallbacks": Array [],
+      "ssrMode": false,
+      "store": DataStore {
+        "cache": InMemoryCache {
+          "addTypename": false,
+          "cacheKeyRoot": CacheKeyNode {
+            "children": null,
+            "key": null,
+          },
+          "config": Object {
+            "addTypename": false,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimistic": Array [],
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "keyMaker": QueryKeyMaker {
+              "cacheKeyRoot": CacheKeyNode {
+                "children": null,
+                "key": null,
+              },
+              "perQueryKeyMakers": Map {},
+            },
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+      },
+      "version": "2.4.5",
+      "watchQuery": [Function],
+    }
+  }
+>
+  <Dashboard />
+</ApolloProvider>
+`;
+
+exports[`<Dashboard /> suite renders correctly isolated component 1`] = `
+<ApolloProvider
+  client={
+    ApolloClient {
+      "cache": InMemoryCache {
+        "addTypename": false,
+        "cacheKeyRoot": CacheKeyNode {
+          "children": null,
+          "key": null,
+        },
+        "config": Object {
+          "addTypename": false,
+          "dataIdFromObject": [Function],
+          "fragmentMatcher": HeuristicFragmentMatcher {},
+        },
+        "data": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "maybeBroadcastWatch": [Function],
+        "optimistic": Array [],
+        "silenceBroadcast": false,
+        "storeReader": StoreReader {
+          "cacheKeyRoot": CacheKeyNode {
+            "children": null,
+            "key": null,
+          },
+          "executeSelectionSet": [Function],
+          "executeStoreQuery": [Function],
+          "keyMaker": QueryKeyMaker {
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
+            "perQueryKeyMakers": Map {},
+          },
+        },
+        "storeWriter": StoreWriter {},
+        "typenameDocumentCache": Map {},
+        "watches": Set {},
+      },
+      "defaultOptions": Object {},
+      "disableNetworkFetches": false,
+      "link": ApolloLink {
+        "request": [Function],
+      },
+      "mutate": [Function],
+      "query": [Function],
+      "queryDeduplication": true,
+      "reFetchObservableQueries": [Function],
+      "resetStore": [Function],
+      "resetStoreCallbacks": Array [],
+      "ssrMode": false,
+      "store": DataStore {
+        "cache": InMemoryCache {
+          "addTypename": false,
+          "cacheKeyRoot": CacheKeyNode {
+            "children": null,
+            "key": null,
+          },
+          "config": Object {
+            "addTypename": false,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimistic": Array [],
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "cacheKeyRoot": CacheKeyNode {
+              "children": null,
+              "key": null,
+            },
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "keyMaker": QueryKeyMaker {
+              "cacheKeyRoot": CacheKeyNode {
+                "children": null,
+                "key": null,
+              },
+              "perQueryKeyMakers": Map {},
+            },
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+      },
+      "version": "2.4.5",
+      "watchQuery": [Function],
+    }
+  }
+>
+  <Dashboard />
+</ApolloProvider>
 `;

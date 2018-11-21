@@ -22,9 +22,7 @@ exports[`<Router /> suite renders HTML tree correctly 1`] = `
       Wrong URI
     </a>
   </div>
-  <div>
-    Dashboard
-  </div>
+  <div />
 </div>
 `;
 
@@ -47,7 +45,7 @@ exports[`<Router /> suite renders components tree correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "42dedh",
+            "key": "xaqdwn",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -61,7 +59,7 @@ exports[`<Router /> suite renders components tree correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "42dedh",
+          "key": "xaqdwn",
           "pathname": "/",
           "search": "",
           "state": undefined,
@@ -71,54 +69,115 @@ exports[`<Router /> suite renders components tree correctly 1`] = `
       }
     }
   >
-    <App>
-      <Router>
-        <Component>
-          <div>
-            <Header>
-              <div>
-                Backend/Frontend Node, React, Typescript boilerplate
-              </div>
-              <div>
-                <Link
-                  replace={false}
-                  to="/"
+    <Router>
+      <Component>
+        <div>
+          <Header>
+            <div>
+              Backend/Frontend Node, React, Typescript boilerplate
+            </div>
+            <div>
+              <Link
+                replace={false}
+                to="/"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
                 >
-                  <a
-                    href="/"
-                    onClick={[Function]}
-                  >
-                    Dashboard
-                  </a>
-                </Link>
-                <Link
-                  replace={false}
-                  to="/another-page"
+                  Dashboard
+                </a>
+              </Link>
+              <Link
+                replace={false}
+                to="/another-page"
+              >
+                <a
+                  href="/another-page"
+                  onClick={[Function]}
                 >
-                  <a
-                    href="/another-page"
-                    onClick={[Function]}
-                  >
-                    Another Page
-                  </a>
-                </Link>
-                <Link
-                  replace={false}
-                  to="/wrong-uri"
+                  Another Page
+                </a>
+              </Link>
+              <Link
+                replace={false}
+                to="/wrong-uri"
+              >
+                <a
+                  href="/wrong-uri"
+                  onClick={[Function]}
                 >
-                  <a
-                    href="/wrong-uri"
-                    onClick={[Function]}
-                  >
-                    Wrong URI
-                  </a>
-                </Link>
-              </div>
-            </Header>
-            <Switch>
-              <Route
-                component={[Function]}
-                computedMatch={
+                  Wrong URI
+                </a>
+              </Link>
+            </div>
+          </Header>
+          <Switch>
+            <Route
+              component={[Function]}
+              computedMatch={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+              exact={true}
+              location={
+                Object {
+                  "hash": "",
+                  "key": "xaqdwn",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              path="/"
+            >
+              <MockComponent
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "canGo": [Function],
+                    "createHref": [Function],
+                    "entries": Array [
+                      Object {
+                        "hash": "",
+                        "key": "xaqdwn",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                    ],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "index": 0,
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "key": "xaqdwn",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                location={
+                  Object {
+                    "hash": "",
+                    "key": "xaqdwn",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
                   Object {
                     "isExact": true,
                     "params": Object {},
@@ -126,85 +185,34 @@ exports[`<Router /> suite renders components tree correctly 1`] = `
                     "url": "/",
                   }
                 }
-                exact={true}
-                location={
-                  Object {
-                    "hash": "",
-                    "key": "42dedh",
-                    "pathname": "/",
-                    "search": "",
-                    "state": undefined,
-                  }
-                }
-                path="/"
               >
-                <Dashboard
-                  history={
-                    Object {
-                      "action": "POP",
-                      "block": [Function],
-                      "canGo": [Function],
-                      "createHref": [Function],
-                      "entries": Array [
-                        Object {
-                          "hash": "",
-                          "key": "42dedh",
-                          "pathname": "/",
-                          "search": "",
-                          "state": undefined,
-                        },
-                      ],
-                      "go": [Function],
-                      "goBack": [Function],
-                      "goForward": [Function],
-                      "index": 0,
-                      "length": 1,
-                      "listen": [Function],
-                      "location": Object {
-                        "hash": "",
-                        "key": "42dedh",
-                        "pathname": "/",
-                        "search": "",
-                        "state": undefined,
-                      },
-                      "push": [Function],
-                      "replace": [Function],
-                    }
-                  }
-                  location={
-                    Object {
-                      "hash": "",
-                      "key": "42dedh",
-                      "pathname": "/",
-                      "search": "",
-                      "state": undefined,
-                    }
-                  }
-                  match={
-                    Object {
-                      "isExact": true,
-                      "params": Object {},
-                      "path": "/",
-                      "url": "/",
-                    }
-                  }
-                >
-                  <div>
-                    Dashboard
-                  </div>
-                </Dashboard>
-              </Route>
-            </Switch>
-          </div>
-        </Component>
-      </Router>
-    </App>
+                <div />
+              </MockComponent>
+            </Route>
+          </Switch>
+        </div>
+      </Component>
+    </Router>
   </Router>
 </MemoryRouter>
 `;
 
 exports[`<Router /> suite renders isolated component correctly 1`] = `
-<Fragment>
-  <Router />
-</Fragment>
+<Component>
+  <Header />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      path="/another-page"
+    />
+    <Route
+      component={[Function]}
+    />
+  </Switch>
+</Component>
 `;
