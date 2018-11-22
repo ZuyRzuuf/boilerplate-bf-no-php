@@ -23,6 +23,8 @@ services:
     - MYSQL_PASSWORD=d3v3l0p3r
     ports:
     - 3307:3306
+    volumes:
+    - ./docker/mysql/custom.cnf:/etc/mysql/conf.d/custom.cnf
     networks:
       app:
         ipv4_address: "10.6.0.3"
