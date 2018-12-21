@@ -13,6 +13,7 @@ COPY . /var/www/app
 
 EXPOSE 3000
 EXPOSE 4000
+EXPOSE 8081
 
 ADD init.sh /init.sh
 RUN chmod +x /init.sh

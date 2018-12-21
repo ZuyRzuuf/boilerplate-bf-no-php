@@ -1,4 +1,5 @@
 const path = require('path');
+const nodeExternals = require('webpack-node-externals');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CleanWebPackPlugin = require('clean-webpack-plugin');
 
@@ -6,17 +7,28 @@ const outputDirectory = 'build';
 
 const htmlPlugin = new HtmlWebPackPlugin({
     template: './src/index.html',
-    filename: './index.html'
+    filename: './index.html',
+    excludeChunks: [ 'server.node' ]
 });
 const cleanPlugin = new CleanWebPackPlugin([outputDirectory]);
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: {
+        server: './server.node.js',
+    },
     output: {
         path: path.join(__dirname, outputDirectory),
-        filename: 'bundle.js'
+        publicPath: '/',
+        filename: '[name].js'
     },
+    target: 'node',
+    node: {
+        // Need this when working with express, otherwise the build fails
+        __dirname: false, // if you don't put this is, __dirname
+        __filename: false, // and __filename return blank or /
+    },
+    externals: [nodeExternals()], // Need this to avoid error when working with Express
     resolve: {
         extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
     },
@@ -46,11 +58,5 @@ module.exports = {
     plugins: [
         cleanPlugin,
         htmlPlugin
-    ],
-    devServer: {
-        host: 'localhost',
-        port: 3000,
-        historyApiFallback: true,
-        open: true
-    }
+    ]
 };
